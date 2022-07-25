@@ -7,7 +7,6 @@ import Colors from '../Color/Colors';
 import BlogActivityScreen from '../screens/BlogActivityScreen';
 import BlogDetailScreen from '../screens/BlogDetailScreen';
 import CreateBlogScreen from '../screens/CreateBlogScreen';
-import AuthScreen from '../screens/AuthScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -87,7 +86,7 @@ const BottomTabNavigator = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Auth"
         component={AuthScreen}
         options={{
@@ -104,7 +103,7 @@ const BottomTabNavigator = () => {
             />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
